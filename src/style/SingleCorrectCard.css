@@ -74,5 +74,10 @@
 
   .textQuestion{
     padding: 5px;
-    width: 94%;
+    width: 93.8%;
+    font-family: 'Josefin Sans', sans-serif;
+  }
+
+  .optionText{
+    padding: 3px;
   }

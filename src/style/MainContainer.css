@@ -42,10 +42,11 @@
 
 .containerSecond{
     background-color: rgb(255, 255, 255);
+    height: 35%;
     margin: 5px;
     margin-top: 88px;
     border-radius: 7px;
-    
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .containerThird{
@@ -75,7 +76,7 @@
     border: 2px solid #000;
     padding: 8px 16px;
     font-size: 1rem;
-    text-align: center;
+    text-align: left;
     text-decoration: none;
     transition: background-color 0.3s ease-in-out;
 }

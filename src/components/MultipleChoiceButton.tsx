@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import SingleCorrectCard from './SingleCorrectCard';
 import MultipleChoiceCard from './MultipleChoiceCard';
+import buttonVector from '../images/buttonVector.svg';
 
 const MultipleChoiceButton = (): JSX.Element => {
   const [components, setComponents] = useState<JSX.Element[]>([]);
@@ -9,13 +10,7 @@ const MultipleChoiceButton = (): JSX.Element => {
     e.preventDefault();
   };
 
-//   const handleDrop = (e: React.DragEvent<HTMLDivElement>): void => {
-//     const id = e.dataTransfer.getData('id');
 
-//     if (id === 'multipleChoice') {
-//       setComponents([...components, <MultipleChoiceCard />]);
-//     }
-//   };
 
   const handleDragStart = (ev: React.DragEvent<HTMLButtonElement>, id: string): void => {
     ev.dataTransfer.setData('id', id);
@@ -25,7 +20,7 @@ const MultipleChoiceButton = (): JSX.Element => {
     <>
       <div className="btnMultipleChoice" onDragOver={handleDragOver} >
         <button className="btn" draggable onDragStart={(e) => handleDragStart(e, 'multipleChoice')}>
-          Multiple Choice
+        {<img src={buttonVector}></img>}&nbsp;&nbsp;&nbsp;&nbsp;Multiple Choice
         </button>
       </div>
     </>

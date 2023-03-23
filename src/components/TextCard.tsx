@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import '../style/SingleCorrectCard.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTrash, faCheck, faCopy, faAdd } from "@fortawesome/free-solid-svg-icons";
-
+import check from '../images/Vector.svg';
 interface Props {
   id: number;
   //DataHandler: (allData: AllData) => void;
@@ -58,7 +58,8 @@ const TextCard: React.FC<Props> = ({ id, DataHandler }) => {
     style={{ position: 'absolute', bottom: 0, right: 0, marginRight: '27px', marginBottom:'7px', border:'none', outline:'none' }}
     onClick={onSave}
   >
-   {<FontAwesomeIcon icon={faCheck}  />}
+   {/* {<FontAwesomeIcon icon={faCheck}  />} */}
+   {<img src={check}></img>}
   </button>
     
         </div>

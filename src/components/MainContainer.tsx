@@ -6,6 +6,7 @@ import MultipleChoiceButton from './MultipleChoiceButton';
 import TextCard from './TextCard';
 import TextButton from './TextButton';
 import '../style/MainContainer.css';
+import Button from '@mui/material/Button';
 
 interface Data {
   question: string;
@@ -147,7 +148,8 @@ const MainContainer: React.FC = () => {
     style={{ position: 'absolute', bottom: 0, right: 0, marginRight: '27px', marginBottom:'7px', border:'none', outline:'none' }}
     onClick={postData}
   >
-   Save Form
+   {/* Save Form */}
+   <Button variant="contained">Save Form</Button>
   </button>
 
         </div>
