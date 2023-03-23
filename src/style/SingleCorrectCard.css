@@ -63,3 +63,16 @@
     padding: 8px 16px;
     width: 83%
   }
+
+
+  .singleCorrectAddButton{
+    border: none;
+    outline: none;
+    color: blue;
+  }
+
+
+  .textQuestion{
+    padding: 5px;
+    width: 94%;
+  }
